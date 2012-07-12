@@ -1,0 +1,65 @@
+-- Changelog --
+
+-----------------
+-- Update 0001 --
+-----------------
+
+-- Fix Quest Min Level for Quest Mor'zul Bloodbringer (7562)
+-- Fix Quest City of Light (10211) Backportet from UDB
+-- Fix Quest Curing the Sick [A] (6124) Backportet from UDB
+-- Fix Quest Curing the Sick [H] (6129) Backportet from UDB
+-- Fix Quest Misson: The Abyssal Shelf (10162) Backportet from UDB
+-- Fix Quest Inoculation (9303) Backportet from UDB
+-- Fix Quest Garments of Darkness (5650) Backportet from UDB
+-- Fix Quest The Demoniac Scryer (10838) Backportet from UDB
+-- Fix reputation for Quest Allegiance to the Aldor (10551) and Allegiance to the Scryers (10552) backport from UDB
+-- Fix Quest The Final Code [A]/[H] Backportet from UDB
+-- Fix Netherwing Drake Backportet from UDB
+-- Fix Doors in The Blood Furnace Instance Backportet from UDB
+-- Remove Battlemaster from game_event_creature
+-- Update xyz for NPC (21502)
+-- Fix NPC Razormaw (17592) he can Fly, needed for Quest Razormaw (9689) Spawn by Item (24221) "game_event_scripts" i think need Waypoints. Backport from UDB
+-- Few Sunwell fixes by Xfurry
+-- Few MoltenCore fixes by infernos
+-- Fix boss_moroes adds he have not movement.
+
+-----------------
+-- Update 0002 --
+-----------------
+
+-- Added all missing creature_template_addon Backportet from UDB
+
+-----------------
+-- Update 0003 --
+-----------------
+
+-- Update all creature InhabitType
+-- Update all creature mechanic_immune_mask
+-- Update all creature scale
+-- Update all creature speed_run
+-- Update all creature speed_walk
+
+-----------------
+-- Update 0004 --
+-----------------
+
+-- Added some creature_linking_template Thanks Xfurry
+
+-----------------
+-- Update 0005 --
+-----------------
+
+-- Defias Rioter (Stormwind Jail Break Event) - Correct NPC Faction So They Aggro
+-- When summoned the following npcs fall to the ground - (XFurry)
+-- Winter Veil Boss Loot Improvement (Set at 10% For Initial Values After Discussions) - (Infernos)
+-- Remove NPC From Children's Week Game Event
+
+-----------------
+-- Update 0006 --
+-----------------
+
+-- Some spell_script_target fixes. (Xfurry)
+-- Some spell_target_position fixes. (Xfurry)
+-- Some spell_scripts fixes. (Xfurry)
+-- Some Updates (Black Moras, Quest 6403, Quest 9180, Shadow Labyrinth, Auchenai Crypts, Zul'Gurub Marli, Zul'Gurub Jeklik, Temple of AQ, Shadowmoon valley, The Arcatraz, The Mechanar, Nefarian Event, Chromaggus Door Lever) (Xfurry)
+-- Some Misc Fixes
