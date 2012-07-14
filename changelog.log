@@ -63,3 +63,24 @@
 -- Some spell_scripts fixes. (Xfurry)
 -- Some Updates (Black Moras, Quest 6403, Quest 9180, Shadow Labyrinth, Auchenai Crypts, Zul'Gurub Marli, Zul'Gurub Jeklik, Temple of AQ, Shadowmoon valley, The Arcatraz, The Mechanar, Nefarian Event, Chromaggus Door Lever) (Xfurry)
 -- Some Misc Fixes
+
+-----------------
+-- Update 0007 --
+-----------------
+
+-- Missing Shattrath Guild Banks (Sanctum)
+-- Pet Trainer Fix (Sanctum)
+-- Quest 411 (UDB)
+-- NPC Apothecary Antonivich (UDB)
+-- NPC Innkeeper Bazil Olof'tazun (UDB)
+-- NPC Floyd Pinkus (UDB)
+-- NPC Floyd Pinkus (UDB)
+-- NPC Magister Aledis, mount and gossip (UDB)
+-- NPC Kagrosh right position (UDB)
+-- NPC Flanis Swiftwing right position and add missing aura (UDB)
+-- NPC Deathforge Guardian fix positions (UDB)
+-- Prince Toreth (UDB)
+-- NPC Galaen - spawn with quest_start_script
+-- NPC Galaen's Corpse - Permanent Feign Death
+-- NPC Funaam
+-- Include ScriptDev2 r2551
