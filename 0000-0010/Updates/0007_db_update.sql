@@ -1,4 +1,4 @@
--- ALTER TABLE db_update_version CHANGE COLUMN db_update_version_0006 db_update_version_0007 bit;
+ALTER TABLE db_update_version CHANGE COLUMN db_update_version_0006 db_update_version_0007 bit;
 
 -- Missing Shattrath Guild Banks (Sanctum)
 DELETE FROM gameobject WHERE id IN (188126,188127);
