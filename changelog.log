@@ -84,3 +84,11 @@
 -- NPC Galaen's Corpse - Permanent Feign Death
 -- NPC Funaam
 -- Include ScriptDev2 r2551
+
+-----------------
+-- Update 0008 --
+-----------------
+
+-- NPC Drake Dealer Hurlunk remove from SD2
+-- NPC Arcanist Xorith remove from SD2 (npc_shattrathflaskvendors)
+-- Include ACID Full Release 2.0.6 Big Thanks to X-Savior
