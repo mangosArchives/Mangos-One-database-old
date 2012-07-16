@@ -47,7 +47,7 @@ INSERT INTO creature_linking_template VALUES
 
 -- Naxxramas
 DELETE FROM creature_linking_template WHERE entry in (16063,16064,16065,16775,16776,16777,16778);
-INSERT INTO creature_Linking_template VALUES
+INSERT INTO creature_linking_template VALUES
 (16063,533,16062,143,0),
 (16064,533,16062,143,0),
 (16065,533,16062,143,0),
