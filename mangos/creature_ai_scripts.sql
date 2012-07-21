@@ -13130,11 +13130,6 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1546102,15461,0,0,100,3,5000,9000,10000,15000,11,26379,0,1,0,0,0,0,0,0,0,0,'Shrieker Scarab - Cast Piercing Shriek'),
 (1546201,15462,9,0,100,3,0,40,14000,18000,11,22886,1,1,0,0,0,0,0,0,0,0,'Spitting Scarab - Cast Berserker Charge'),
 (1546202,15462,0,0,100,3,5000,9000,4000,6000,11,24334,4,0,0,0,0,0,0,0,0,0,'Spitting Scarab - Cast Acid Spit'),
-(1547101,15471,0,0,100,3,1000,3000,30000,45000,11,25516,0,1,0,0,0,0,0,0,0,0,'Lieutenant General Andorov - Cast Aura of Command'),
-(1547102,15471,9,0,100,3,0,5,4000,6000,11,22591,1,0,0,0,0,0,0,0,0,0,'Lieutenant General Andorov - Cast Strike'),
-(1547103,15471,0,0,100,3,8000,11000,12000,15000,11,25515,4,1,0,0,0,0,0,0,0,0,'Lieutenant General Andorov - Cast Bash'),
-(1547301,15473,9,0,100,3,0,5,5000,7000,11,26350,1,0,0,0,0,0,0,0,0,0,'Lieutenant General Andorov - Cast Cleave'),
-(1547302,15473,0,0,100,3,8000,11000,9000,13000,11,16856,4,1,0,0,0,0,0,0,0,0,'Lieutenant General Andorov - Cast Mortal Strike'),
 (1550501,15505,9,0,100,3,0,5,5000,8000,11,12097,4,32,0,0,0,0,0,0,0,0,'Canal Frenzy - Cast Pierce Armor'),
 (1552701,15527,9,0,100,3,0,30,8000,11000,11,25679,0,0,0,0,0,0,0,0,0,0,'Mana Fiend - Cast Arcane Explosion'),
 (1552702,15527,13,0,100,3,6000,10000,0,0,11,15122,6,1,0,0,0,0,0,0,0,0,'Mana Fiend - Cast Counterspell on Target Spell Casting'),
@@ -17322,12 +17317,12 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1982611,19826,2,0,100,0,15,0,0,0,22,3,0,0,0,0,0,0,0,0,0,0,'Dark Conclave Shadowmance - Set Phase 3 at 15% HP'),
 (1982612,19826,2,7,100,0,15,0,0,0,21,1,0,0,25,0,0,0,1,-47,0,0,'Dark Conclave Shadowmance - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 (1982613,19826,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Dark Conclave Shadowmance - Set Phase to 0 on Evade'),
-(1982701,19827,0,0,100,1,6000,6000,8000,14000,11,23600,0,1,0,0,0,0,0,0,0,0,'Dark Conclave Ravenguard - Cast Piercing Howl');
-INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+(1982701,19827,0,0,100,1,6000,6000,8000,14000,11,23600,0,1,0,0,0,0,0,0,0,0,'Dark Conclave Ravenguard - Cast Piercing Howl'),
 (1982702,19827,2,0,100,0,30,0,0,0,11,8599,0,1,1,-46,0,0,0,0,0,0,'Dark Conclave Ravenguard - Cast Enrage at 30% HP'),
 (1983001,19830,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Arcanist Ardonis - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (1983002,19830,4,0,100,0,0,0,0,0,11,35853,1,0,23,1,0,0,0,0,0,0,'Arcanist Ardonis - Cast Chain Fireball and Set Phase 1 on Aggro'),
-(1983003,19830,9,5,100,1,0,40,3400,4800,11,35853,1,0,0,0,0,0,0,0,0,0,'Arcanist Ardonis - Cast Chain Fireball (Phase 1)'),
+(1983003,19830,9,5,100,1,0,40,3400,4800,11,35853,1,0,0,0,0,0,0,0,0,0,'Arcanist Ardonis - Cast Chain Fireball (Phase 1)');
+INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
 (1983004,19830,3,5,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Arcanist Ardonis - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 (1983005,19830,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Arcanist Ardonis - Start Combat Movement at 35 Yards (Phase 1)'),
 (1983006,19830,9,5,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Arcanist Ardonis - Prevent Combat Movement at 15 Yards (Phase 1)'),
