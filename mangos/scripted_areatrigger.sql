@@ -80,6 +80,8 @@ INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES
 (3958,'at_zulgurub'),
 (3960,'at_zulgurub'),
 (4016,'at_shade_of_eranikus'),
+(4033,'at_stomach_cthun'),
+(4034,'at_stomach_cthun'),
 (4047,'at_temple_ahnqiraj'),
 (4112,'at_naxxramas'),
 (4113,'at_naxxramas'),
