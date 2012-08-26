@@ -37,7 +37,7 @@ DROP TABLE IF EXISTS `db_version`;
 CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
-  `required_s1592_12012_01_mangos_spell_template` bit(1) DEFAULT NULL
+  `required_s1665_12094_01_mangos_creature_template` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -47,7 +47,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1592_12012_01_mangos_spell_template`) VALUES
+INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1665_12094_01_mangos_creature_template`) VALUES
 ('TBC-DB for MaNGOSOne','ACID 2.0.6e \'Streamlined Perfection\' - Full Release for MaNGOS One (2.4.3 Client)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
