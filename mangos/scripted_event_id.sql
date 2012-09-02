@@ -66,6 +66,7 @@ INSERT INTO `scripted_event_id` (`id`, `ScriptName`) VALUES
 (5623,'event_spell_gandling_shadow_portal'),
 (8328,'npc_kroshius'),
 (8502,'event_avatar_of_hakkar'),
+(10951,'event_spell_medivh_journal'),
 (11111,'event_go_barrel_old_hillsbrad'),
 (11225,'event_taxi_stormcrow'),
 (13513,'event_spell_soul_captured_credit'),
