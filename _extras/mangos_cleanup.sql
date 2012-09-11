@@ -16,16 +16,18 @@
 -- Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 --
 
-ALTER TABLE `creature` AUTO_INCREMENT=200000;
-ALTER TABLE `gameobject` AUTO_INCREMENT=200000;
 UPDATE gameobject SET state = 0 WHERE id IN (SELECT entry FROM gameobject_template WHERE type = 0 AND data0 = 1);
 UPDATE creature_template SET unit_flags=unit_flags&~2048 WHERE unit_flags&2048=2048;
 UPDATE creature_template SET unit_flags=unit_flags&~524288 WHERE unit_flags&524288=524288;
 UPDATE creature_template SET unit_flags=unit_flags&~67108864 WHERE unit_flags&67108864=67108864;
 UPDATE creature_template SET unit_flags=unit_flags&~8388608 WHERE unit_flags&8388608=8388608;
-UPDATE creature,creature_template SET creature.curhealth=creature_template.minhealth,creature.curmana=creature_template.minmana WHERE creature.id=creature_template.entry and creature_template.RegenHealth = '1';
+UPDATE creature, creature_template SET creature.curhealth=creature_template.minhealth,creature.curmana=creature_template.minmana WHERE creature.id=creature_template.entry and creature_template.RegenHealth = '1';
 UPDATE creature_template SET dynamicflags = dynamicflags &~ 223;
 UPDATE creature_template SET npcflag = npcflag&~16777216; -- UNIT_NPC_FLAG_SPELLCLICK
+-- UPDATE creature_template c1, creature_template c2 SET c2.unit_class=c1.unit_class, c2.npcflag=c1.npcflag, c2.faction_A=c1.faction_A, c2.faction_H=c1.faction_H, c2.speed_walk=c1.speed_walk, c2.speed_run=c1.speed_run, c2.scale=c1.scale, c2.InhabitType=c1.InhabitType, c2.MovementType=c1.MovementType, c2.unit_flags=c1.unit_flags WHERE c2.entry=c1.difficulty_entry_1;
+-- UPDATE creature_template c1, creature_template c2 SET c2.unit_class=c1.unit_class, c2.npcflag=c1.npcflag, c2.faction_A=c1.faction_A, c2.faction_H=c1.faction_H, c2.speed_walk=c1.speed_walk, c2.speed_run=c1.speed_run, c2.scale=c1.scale, c2.InhabitType=c1.InhabitType, c2.MovementType=c1.MovementType, c2.unit_flags=c1.unit_flags WHERE c2.entry=c1.difficulty_entry_2;
+-- UPDATE creature_template c1, creature_template c2 SET c2.unit_class=c1.unit_class, c2.npcflag=c1.npcflag, c2.faction_A=c1.faction_A, c2.faction_H=c1.faction_H, c2.speed_walk=c1.speed_walk, c2.speed_run=c1.speed_run, c2.scale=c1.scale, c2.InhabitType=c1.InhabitType, c2.MovementType=c1.MovementType, c2.unit_flags=c1.unit_flags WHERE c2.entry=c1.difficulty_entry_3;
+-- UPDATE gameobject_template SET flags=flags&~4 WHERE type IN (2,19,17);
 UPDATE creature SET MovementType = 0 WHERE spawndist = 0 AND MovementType=1;
 UPDATE creature SET spawndist=0 WHERE MovementType=0;
 UPDATE quest_template SET SpecialFlags=SpecialFlags|1 WHERE QuestFlags=QuestFlags|4096;
@@ -35,7 +37,7 @@ DELETE FROM gi,gt USING gameobject_involvedrelation gi LEFT JOIN gameobject_temp
 DELETE FROM gqr,gt USING gameobject_questrelation gqr LEFT JOIN gameobject_template gt ON gqr.id=gt.entry WHERE gt.entry IS NULL;
 DELETE FROM ge,go USING game_event_gameobject ge LEFT JOIN gameobject go ON ge.guid=go.guid WHERE go.guid IS NULL;
 DELETE FROM gameobject_scripts WHERE id NOT IN (SELECT guid FROM gameobject);
-DELETE FROM gameobject_scripts WHERE command in (11,12) and datalong NOT IN (SELECT guid FROM gameobject);
+DELETE FROM gameobject_scripts WHERE command IN (11, 12) AND datalong!=0 AND datalong NOT IN (SELECT guid FROM gameobject);
 DELETE FROM gameobject_battleground WHERE guid NOT IN (SELECT guid FROM gameobject);
 DELETE FROM creature_battleground WHERE guid NOT IN (SELECT guid FROM creature);
 DELETE FROM creature_addon WHERE guid NOT IN (SELECT guid FROM creature);
