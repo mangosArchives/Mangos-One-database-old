@@ -261,6 +261,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005085,'Let me help you with those.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005086,'Drink this, it will help.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005087,'You\'re going to be just fine.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005093,'Oh sweet, delicious, spotted eggs - you will be mine...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005094,'Please, follow me.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005095,'I haven\'t really figured out what it is, but there\'s something strange about the hot springs...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005096,'%s tosses the sword into the shallow pool.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
