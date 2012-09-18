@@ -261,6 +261,8 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005085,'Let me help you with those.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005086,'Drink this, it will help.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005087,'You\'re going to be just fine.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005090,'Honor your heroes! On this day, they have dealt a great blow against one of our most hated enemies! The false Warchief, Rend Blackhand, has fallen! ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005091,'Be bathed in my power! Drink in my might! Battle for the glory of the Horde!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005092,'The deeds are mine, brother! Soon you shall be out of my way for good!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005093,'Oh sweet, delicious, spotted eggs - you will be mine...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005094,'Please, follow me.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
