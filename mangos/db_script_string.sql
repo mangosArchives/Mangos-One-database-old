@@ -258,6 +258,8 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005075,'It is time to force your final challenge young warriors! Prepare for your hardest fight yet.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005076,'Lysta, summon forth... the abomination!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005077,'Well done Edward and Tyler. You are progressing along in your training quite nicely. We shall test your mettle again soon.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005078,'Have you freed Drull yet? I don\'t know where he\'s being held.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005079,'I will only slow you down, but no pink-skinned humans will keep me from freedom!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005080,'%s places the crate of parts on the ground.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005081,'%s grabs a part and puts it in his pocket...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005082,'There, that should do it...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
