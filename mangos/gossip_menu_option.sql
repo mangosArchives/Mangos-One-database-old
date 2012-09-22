@@ -2617,7 +2617,8 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 (20005,1,0,'It is good to see the Burning Blade is taking over where the Shadow Council once failed.',1,1,20006,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0),
 (20006,1,0,'So the Searing Blade is expendable?',1,1,20007,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0),
 (20007,1,0,'Is there anything you would have of me? ',1,1,20008,0,20007,0,0,NULL,0,0,0,0,0,0,0,0,0,0),
-(20013,0,0,'Yes, please do.',17,16,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,0);
+(20013,0,0,'Yes, please do.',17,16,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0,0),
+(20022,0,0,'I need a Cenarion beacon.',1,1,-1,0,2208,0,0,NULL,8,4102,0,24,11511,1,0,0,0,0);
 /*!40000 ALTER TABLE `gossip_menu_option` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -180,6 +180,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000224,'%s howls in response to Malukaz\'s call.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000225,'%s expresses its approval.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000226,'May our bond with you never be broken again, spirit.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000000318,'Here\'s a beacon, $N. Keep it to yourself, if you\'re gonna find mutilated things that we need.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005000,'Poor Dorius. If I ever get my hands on those Dark Irons, so help me...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005001,'Opus wants some Cuergo\'s Gold... with worm.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005002,'Bijou lost! SQUAWK! *cough',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
