@@ -37,7 +37,7 @@ DROP TABLE IF EXISTS `db_version`;
 CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
-  `required_s1698_xxxxx_01_mangos_playercreateinfo_spell` bit(1) DEFAULT NULL
+  `required_s1700_xxxxx_01_mangos_areatrigger_teleport` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -47,7 +47,7 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1698_xxxxx_01_mangos_playercreateinfo_spell`) VALUES
+INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1700_xxxxx_01_mangos_areatrigger_teleport`) VALUES
 ('C(ontinued)-TBC-DB for MaNGOSOne','ACID 2.0.7 \'Another Wild Adventure\' - Full Release for MaNGOS (2.4.3 Client)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
