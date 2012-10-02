@@ -946,8 +946,7 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 (47129,1,26355),
 (47344,1,26764),
 (49858,1,27890),
-(52850,1,26764),
-(52850,1,26822);
+(52850,1,23872);
 /*!40000 ALTER TABLE `spell_script_target` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
