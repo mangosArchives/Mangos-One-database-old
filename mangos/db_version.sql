@@ -48,7 +48,7 @@ CREATE TABLE `db_version` (
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
 INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1718_12113_01_mangos_spell_template`) VALUES
-('C(ontinued)-TBC-DB for MaNGOSOne','ACID 2.0.7 \'Another Wild Adventure\' - Full Release for MaNGOS (2.4.3 Client)',NULL);
+('TBC-DB 1.0.0 for MaNGOSOne s1725 and ScriptDevOne s2628','ACID 2.0.7 \'Another Wild Adventure\' - Full Release for MaNGOS (2.4.3 Client)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
