@@ -10,3 +10,9 @@ UPDATE quest_template SET ReqSourceCount1 = '5' WHERE entry =746;
 -- Fix: Add Source Item 33009. From UDB
 
 UPDATE quest_template SET ReqSourceId1 = '33009' WHERE entry =11129;
+
+
+-- Add Skinning Skill requirement to quest 768
+-- From Zero
+
+UPDATE quest_template SET RequiredSkill = '393', RequiredSkillValue = '1' WHERE entry =768;
