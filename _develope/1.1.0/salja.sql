@@ -225,7 +225,12 @@ INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,posi
 -- Start Some Updates for Sunwell ScriptDevOne Commit [s2632] Thanks Xfurry
 --
 
-UPDATE gameobject_template SET flags=flags|16 WHERE entry IN (187869, 188114, 188115, 188116);
+DELETE FROM `gameobject_template` WHERE entry IN (187869, 188114, 188115, 188116);
+INSERT INTO `gameobject_template` VALUES
+('187869','10','4891','Orb of the Blue Flight','','','0','16','2','0','0','0','5000','0','0','0','0','0','0','45833','0','0','1','0','0','0','0','0','0','0','0','0','0','0','0',''),
+('188114','10','4891','Orb of the Blue Flight','','','0','16','2','0','0','0','5000','0','0','0','0','0','0','45833','0','0','1','0','0','0','0','0','0','0','0','0','0','0','0',''),
+('188115','10','4891','Orb of the Blue Flight','','','0','16','2','0','0','0','5000','0','0','0','0','0','0','45833','0','0','1','0','0','0','0','0','0','0','0','0','0','0','0',''),
+('188116','10','4891','Orb of the Blue Flight','','','0','16','2','0','0','0','5000','0','0','0','0','0','0','45833','0','0','1','0','0','0','0','0','0','0','0','0','0','0','0','');
 
 DELETE FROM gameobject WHERE id IN (187869, 188114, 188115, 188116);
 INSERT INTO gameobject (guid,id,map,spawnMask,position_x,position_y,position_z,orientation,rotation0,rotation1,rotation2,rotation3,spawntimesecs,animprogress,state) VALUES
