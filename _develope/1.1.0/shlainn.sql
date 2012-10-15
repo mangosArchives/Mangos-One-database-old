@@ -16,3 +16,8 @@ UPDATE quest_template SET ReqSourceId1 = '33009' WHERE entry =11129;
 -- From Zero
 
 UPDATE quest_template SET RequiredSkill = '393', RequiredSkillValue = '1' WHERE entry =768;
+
+
+-- Quest 9720 should be available for both sides
+
+UPDATE quest_template SET RequiredRaces = '0' WHERE entry = 9720;
