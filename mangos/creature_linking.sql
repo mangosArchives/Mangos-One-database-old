@@ -50,7 +50,10 @@ LOCK TABLES `creature_linking` WRITE;
 /*!40000 ALTER TABLE `creature_linking` DISABLE KEYS */;
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (57507,57506,515),
-(57527,57528,515);
+(57527,57528,515),
+(57594,57595,515),
+(57595,57596,515),
+(57596,57597,515);
 /*!40000 ALTER TABLE `creature_linking` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
