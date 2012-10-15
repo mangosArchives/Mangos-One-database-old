@@ -275,7 +275,7 @@ UPDATE creature_template SET minhealth=9347800, maxhealth=9347800, minmana=16935
 --
 
 -- Set faction of Attumen the Huntsman (16152) to 16-16 (instead of 35-35)
-UPDATE creatue_template SET faction_A=16, faction_H=16 WHERE entry=16152;
+UPDATE creature_template SET faction_A=16, faction_H=16 WHERE entry=16152;
 
 --
 -- Start Creature Movement for some Creatures Thanks UDB
