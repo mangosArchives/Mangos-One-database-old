@@ -654,6 +654,20 @@ INSERT INTO creature_movement_scripts (id, delay, command, datalong, datalong2, 
 (1897701,0,15,7741,0,0,0,0x04,0,0,0,0,0,0,0,0,'spawn effect'),
 (1897702,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn');
 
+UPDATE creature_template SET InhabitType =3 WHERE entry =20237;
+UPDATE creature SET position_x =267.501587, position_y =1449.238037, position_z =-14.375632, orientation =4.235786, MovementType =2, spawndist =0 WHERE guid =96989;
+DELETE FROM creature_movement WHERE id =96989;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(96989,1,267.501587,1449.238037,-14.375632,10000,2023701,0,0,0,0,0,0,0,0,4.235786,0,0),
+(96989,2,267.501587,1449.238037,-14.375632,60000,0,0,0,0,0,0,69,0,0,4.235786,0,0),
+(96989,3,267.501587,1449.238037,-14.375632,3000,0,0,0,0,0,0,0,0,0,4.235786,0,0),
+(96989,4,288.011597,1484.457275,-13.365582,2000,0,0,0,0,0,0,0,0,0,1.080037,0,0),
+(96989,5,288.011597,1484.457275,-13.365582,60000,0,0,0,0,0,0,69,0,0,1.080037,0,0),
+(96989,6,288.011597,1484.457275,-13.365582,3000,0,0,0,0,0,0,0,0,0,1.080037,0,0);
+DELETE FROM creature_movement_scripts WHERE id =2023701;
+INSERT INTO creature_movement_scripts (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2023701,0,25,20237,1,0,0,0,0,0,0,0,0,0,0,0,'RUN ON');
+
 --
 -- End Creature Movement for some Creatures Thanks UDB
 --
