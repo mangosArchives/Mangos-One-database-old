@@ -237,6 +237,8 @@ INSERT INTO `creature_movement_scripts` (`id`, `delay`, `command`, `datalong`, `
 (1763501,4,24,2410,0,0,0,8,0,0,0,0,0,0,0,0,'Lordaeron Commander - mount'),
 (1763502,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lordaeron Commander - set movement to idle'),
 (1799501,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lordaeron Veteran - set movement to idle'),
+(1897701,0,15,7741,0,0,0,4,0,0,0,0,0,0,0,0,'spawn effect'),
+(1897702,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn'),
 (1944501,0,0,0,0,19446,10,0,2000005412,0,0,0,0,0,0,0,'force 19446 to: say text'),
 (1944501,0,1,6,0,19446,15,0,0,0,0,0,0,0,0,0,'force 19446 to: emote'),
 (1944502,2,3,0,0,0,0,0,0,0,0,0,0,0,0,2.42158,''),
