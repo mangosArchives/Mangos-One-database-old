@@ -906,6 +906,28 @@ DELETE FROM creature_linking WHERE guid =57527;
 INSERT INTO creature_linking (guid, master_guid, flag) VALUES
 (57527,57528,515);
 
+UPDATE creature SET MovementType =2, spawndist =0 WHERE guid IN (57891,57890,57542,57543,57492);
+DELETE FROM creature_movement WHERE id IN (57891,57890,57542,57543,57492);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+
+(57891,1,-265.926,1032.88,54.4051,300000,1683101,0,0,0,0,0,0,0,0,5.34071,0,0),
+(57891,2,-265.926,1032.88,54.4051,300000,0,0,0,0,0,0,0,0,0,5.34071,0,0),
+(57890,1,-267.561,1030.86,54.4068,300000,1683101,0,0,0,0,0,0,0,0,5.63741,0,0),
+(57890,2,-267.561,1030.86,54.4068,300000,0,0,0,0,0,0,0,0,0,5.63741,0,0),
+
+(57492,1,-229.83,1027.49,54.411,300000,1658001,0,0,0,0,0,0,0,0,3.76991,0,0),
+(57492,2,-229.83,1027.49,54.411,300000,0,0,0,0,0,0,0,0,0,3.76991,0,0),
+(57542,1,-233.293,1030.99,54.4062,300000,1658201,0,0,0,0,0,0,0,0,4.2237,0,0),
+(57542,2,-233.293,1030.99,54.4062,300000,0,0,0,0,0,0,0,0,0,4.2237,0,0),
+(57543,1,-230.368,1030.42,54.4091,300000,1658201,0,0,0,0,0,0,0,0,3.89208,0,0),
+(57543,2,-230.368,1030.42,54.4091,300000,0,0,0,0,0,0,0,0,0,3.89208,0,0);
+
+DELETE FROM creature_movement_scripts WHERE id IN (1683101,1658001,1658201);
+INSERT INTO creature_movement_scripts (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1683101,0,22,1756,1,0,0,0,0,0,0,0,0,0,0,0,''),
+(1658001,0,22,1760,1,0,0,0,0,0,0,0,0,0,0,0,''),
+(1658201,0,22,1760,1,0,0,0,0,0,0,0,0,0,0,0,'');
+
 --
 -- End Creature Movement for some Creatures Thanks UDB
 --
