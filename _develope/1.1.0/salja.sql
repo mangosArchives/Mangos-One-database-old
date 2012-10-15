@@ -668,6 +668,54 @@ DELETE FROM creature_movement_scripts WHERE id =2023701;
 INSERT INTO creature_movement_scripts (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (2023701,0,25,20237,1,0,0,0,0,0,0,0,0,0,0,0,'RUN ON');
 
+UPDATE creature SET MovementType =2, spawndist =0 WHERE guid =71924;
+DELETE FROM creature_movement WHERE id =71924;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(71924,1,272.093323,1456.687378,-14.028057,0,0,0,0,0,0,0,0,0,0,4.936307,0,0),
+(71924,2,279.390381,1432.527832,-9.759196,0,0,0,0,0,0,0,0,0,0,5.308580,0,0),
+(71924,3,286.007507,1420.044800,-6.513516,0,0,0,0,0,0,0,0,0,0,5.584253,0,0),
+(71924,4,300.903381,1407.467896,-2.968066,0,0,0,0,0,0,0,0,0,0,6.131674,0,0),
+(71924,5,313.456848,1404.947754,-3.534659,0,0,0,0,0,0,0,0,0,0,0.140652,0,0),
+(71924,6,343.872986,1407.978149,-0.260891,0,0,0,0,0,0,0,0,0,0,0.991238,0,0),
+(71924,7,350.355988,1417.710205,-0.307936,0,0,0,0,0,0,0,0,0,0,1.287334,0,0),
+(71924,8,355.045349,1434.568726,-0.832355,0,0,0,0,0,0,0,0,0,0,1.622699,0,0),
+(71924,9,353.351746,1452.611938,0.880640,0,0,0,0,0,0,0,0,0,0,2.119856,0,0),
+(71924,10,337.422363,1476.010010,-4.496864,5000,2023801,0,0,0,0,0,0,0,0,2.420664,0,0),
+(71924,11,305.431793,1496.180786,-12.939352,5000,2023802,0,0,0,0,0,0,0,0,3.310518,0,0),
+(71924,12,285.515930,1479.266846,-12.324452,0,0,0,0,0,0,0,0,0,0,3.932554,0,0),
+(71924,13,279.034698,1471.855835,-13.264679,0,0,0,0,0,0,0,0,0,0,4.152462,0,0);
+DELETE FROM creature_movement_scripts WHERE id IN (2023801,2023802);
+INSERT INTO creature_movement_scripts (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2023801,0,25,20238,1,0,0,0,0,0,0,0,0,0,0,0,'RUN ON'),
+(2023802,0,25,20238,0,0,0,0,0,0,0,0,0,0,0,0,'RUN OFF');
+
+UPDATE creature SET MovementType =2, spawndist =0 WHERE guid =96994;
+DELETE FROM creature_movement WHERE id =96994;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(96994,1,322.826,1470.75,-4.64011,8000,0,0,0,0,0,0,0,35063,0,0.593412,0,0),
+(96994,2,322.826,1470.75,-4.64011,7500,0,0,0,0,0,0,0,35063,0,0.593412,0,0),
+(96994,3,322.826,1470.75,-4.64011,5000,0,0,0,0,0,0,0,35063,0,0.593412,0,0),
+(96994,4,322.826,1470.75,-4.64011,10000,0,0,0,0,0,0,0,35097,0,0.593412,0,0),
+(96994,5,322.826,1470.75,-4.64011,3000,0,0,0,0,0,0,0,35063,0,0.593412,0,0);
+
+UPDATE creature SET MovementType =2, spawndist =0 WHERE guid =96993;
+DELETE FROM creature_movement WHERE id =96993;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(96993,1,317.901,1473.37,-6.11224,2500,0,0,0,0,0,0,0,35063,0,0.453786,0,0),
+(96993,2,317.901,1473.37,-6.11224,7000,0,0,0,0,0,0,0,35063,0,0.453786,0,0),
+(96993,3,317.901,1473.37,-6.11224,10000,0,0,0,0,0,0,0,35097,0,0.453786,0,0),
+(96993,4,317.901,1473.37,-6.11224,2500,0,0,0,0,0,0,0,35063,0,0.453786,0,0),
+(96993,5,317.901,1473.37,-6.11224,5000,0,0,0,0,0,0,0,35063,0,0.453786,0,0);
+
+UPDATE creature SET MovementType =2, spawndist =0 WHERE guid =96992;
+DELETE FROM creature_movement WHERE id =96992;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(96992,1,313.404,1476.27,-7.68097,3500,0,0,0,0,0,0,0,35097,0,0.820305,0,0),
+(96992,2,313.404,1476.27,-7.68097,10000,0,0,0,0,0,0,0,35063,0,0.820305,0,0),
+(96992,3,313.404,1476.27,-7.68097,9000,0,0,0,0,0,0,0,35063,0,0.820305,0,0),
+(96992,4,313.404,1476.27,-7.68097,9500,0,0,0,0,0,0,0,35063,0,0.820305,0,0),
+(96992,5,313.404,1476.27,-7.68097,8000,0,0,0,0,0,0,0,35063,0,0.820305,0,0);
+
 --
 -- End Creature Movement for some Creatures Thanks UDB
 --
