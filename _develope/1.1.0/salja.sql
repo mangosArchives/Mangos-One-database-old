@@ -719,3 +719,13 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 --
 -- End Creature Movement for some Creatures Thanks UDB
 --
+
+--
+-- Start Some misc stuff
+--
+
+UPDATE creature_addon SET auras=32951 WHERE guid IN (57579,57580);
+
+--
+-- End Some misc stuff
+--
