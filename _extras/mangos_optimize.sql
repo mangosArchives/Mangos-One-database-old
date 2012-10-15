@@ -40,7 +40,7 @@ ALTER TABLE `creature_model_info` ORDER BY `modelid` ASC;
 ALTER TABLE `creature_model_race` ORDER BY `modelid` ASC;
 ALTER TABLE `creature_movement` ORDER BY `id`, `point` ASC;
 ALTER TABLE `creature_movement_scripts` ORDER BY `id` ASC, `delay` ASC;
-ALTER TABLE `creature_movement_template` ORDER BY `entry` ASC;
+ALTER TABLE `creature_movement_template` ORDER BY `entry`, `point` ASC;
 ALTER TABLE `creature_onkill_reputation` ORDER BY `creature_id` ASC;
 ALTER TABLE `creature_questrelation` ORDER BY `quest` ASC;
 ALTER TABLE `creature_template` ORDER BY `entry` ASC;
