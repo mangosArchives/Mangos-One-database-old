@@ -1694,6 +1694,93 @@ INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2
 
 UPDATE creature_addon SET auras=32951 WHERE guid IN (57579,57580);
 
+DELETE FROM creature_addon WHERE guid IN (54049, 96656, 96657,96658);
+INSERT INTO creature_addon (guid, emote) VALUES
+(54049, 48),
+(96656, 48),
+(96657, 48),
+(96658, 48);
+
+UPDATE creature_addon SET auras = '44920' WHERE
+guid IN (
+65680, 54184, 54178, 94417, 54143, 94426, 54092, 54049, 54028,
+53982, 94428, 94413, 94423, 65692, 94422, 94412, 94413, 94407,
+65695, 65697, 65683, 65688, 65685
+);
+
+UPDATE creature_addon SET auras = '44924' WHERE
+guid IN (
+94431, 65681, 54113, 54183, 54177, 94420, 94425, 65691, 94408,
+54032, 65694, 54029, 54004, 94431, 94410, 94415, 94416, 94429,
+94419, 94420, 65702, 65686
+);
+
+UPDATE creature_addon SET auras = '44928' WHERE
+guid IN (
+54176, 54185, 54181, 94419, 65701, 54034, 53981, 94429, 94422, 94409,
+65700, 65699, 65690, 65684
+);
+
+UPDATE creature_addon SET auras = '44932' WHERE
+guid IN (
+56315, 54165, 54114, 54182, 65698, 54038, 54023, 94427, 94430, 94424,
+94414, 65689, 94411, 94414, 94418, 94430, 96656, 65696, 65693, 65687
+);
+
+DELETE FROM creature_addon WHERE guid IN
+(94438, 94437, 94436, 94435, 94434, 94433, 94432,
+72989, 72677, 71928, 71927, 71926, 71925, 70088, 69909,
+68746, 65804, 65803, 65802, 65709, 65708, 65707, 65706,
+65705, 65704);
+
+INSERT INTO creature_addon (guid, emote, auras) VALUES
+(94438, 0, '45170'),
+(94437, 0, '45170'),
+(94436, 0, '45170'),
+(94435, 0, '45166'),
+(94434, 0, '45162'),
+(94433, 0, '45158'),
+(94432, 0, '45170'),
+(72989, 0, '45158'),
+(72677, 0, '45170'),
+(71928, 0, '45162'),
+(71927, 0, '45166'),
+(71926, 0, '45170'),
+(71925, 0, '45158'),
+(70088, 0, '45158'),
+(69909, 0, '45170'),
+(68746, 0, '45162'),
+(65804, 0, '45158'),
+(65803, 0, '45170'),
+(65802, 0, '45166'),
+(65709, 0, '45170'),
+(65708, 0, '45158'),
+(65707, 0, '45170'),
+(65706, 0, '45166'),
+(65705, 0, '45166'),
+(65704, 0, '45162');
+
+UPDATE creature_addon SET auras='45162' WHERE guid IN
+(94387, 65703);
+
+UPDATE creature_addon SET auras='45166' WHERE guid IN
+(71920);
+
+UPDATE creature_addon SET emote = 333 WHERE guid IN (71920, 65703);
+
+INSERT INTO creature (guid, id, map, spawnMask, position_x, position_y, position_z, orientation) VALUES
+(1117, 24938, 530, 1, 12673.1, -6982.69, 36.3136, 4.20624);
+
+DELETE FROM creature_addon WHERE guid = 153;
+INSERT INTO creature_addon (guid, emote, auras) VALUES
+(1117, 48, '44924');
+
+UPDATE creature_addon SET emote = 0 WHERE guid IN (54049, 54038, 54092, 54034);
+
+UPDATE creature SET position_x=12904.799805, position_y=-6889.259766, position_z=7.640220, orientation=4.27606 WHERE guid=76574;
+UPDATE creature SET position_x=12904.3, position_y=-6892.27, position_z=7.29179, orientation=4.45059 WHERE guid=65701;
+UPDATE creature SET position_x=12902, position_y=-6892.09, position_z=7.44494, orientation=3.76991 WHERE guid=71920;
+
 --
 -- End Some misc stuff
 --
