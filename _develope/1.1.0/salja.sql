@@ -1783,6 +1783,9 @@ UPDATE creature SET position_x=12902, position_y=-6892.09, position_z=7.44494, o
 
 DELETE FROM creature WHERE guid = 71923;
 
+-- Thanks LordPsyan
+UPDATE quest_template SET OfferRewardText = 'Hmmm, Narm sent you to me, did he?$B$BWell then, Narm could always be trusted, so that must mean you''re ready to take part of the next sapta--the sapta of fire.$B$BI see it in your eyes already, the burning, the desire. You''ve tasted power, and now you''re ready for more of it. Patience, $N. Remember what earth taught you. Power and destruction will come easily, but you must still know when to stay your hand.' WHERE entry =2984;
+
 --
 -- End Some misc stuff
 --
