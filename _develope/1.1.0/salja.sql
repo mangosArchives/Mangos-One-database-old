@@ -1781,6 +1781,8 @@ UPDATE creature SET position_x=12904.799805, position_y=-6889.259766, position_z
 UPDATE creature SET position_x=12904.3, position_y=-6892.27, position_z=7.29179, orientation=4.45059 WHERE guid=65701;
 UPDATE creature SET position_x=12902, position_y=-6892.09, position_z=7.44494, orientation=3.76991 WHERE guid=71920;
 
+DELETE FROM creature WHERE guid = 71923;
+
 --
 -- End Some misc stuff
 --
