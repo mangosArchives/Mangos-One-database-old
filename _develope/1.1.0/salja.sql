@@ -1789,6 +1789,18 @@ UPDATE quest_template SET OfferRewardText = 'Hmmm, Narm sent you to me, did he?$
 DELETE FROM `game_graveyard_zone` WHERE id=998 AND ghost_zone=3698;
 INSERT INTO `game_graveyard_zone` VALUES (998,3698,67);
 
+UPDATE `quest_template` SET CompleteScript=11401 WHERE entry=11401;
+UPDATE `quest_template` SET CompleteScript=11401 WHERE entry=11404;
+UPDATE `quest_template` SET CompleteScript=11401 WHERE entry=11405;
+UPDATE `quest_template` SET CompleteScript=11401 WHERE entry=11392;
+
+DELETE FROM `quest_end_scripts` WHERE id IN (11401,11404,11405,11392);
+INSERT INTO `quest_end_scripts` VALUES
+('11401','0','10','23682','1200000','0','0','0','0','0','0','0','1799.04','1377.62','18.8875','4.65',''),
+('11404','0','10','23682','1200000','0','0','0','0','0','0','0','1799.04','1377.62','18.8875','4.65',''),
+('11405','0','10','23682','1200000','0','0','0','0','0','0','0','1799.04','1377.62','18.8875','4.65',''),
+('11392','0','10','23682','1200000','0','0','0','0','0','0','0','1799.04','1377.62','18.8875','4.65','');
+
 --
 -- End Some misc stuff
 --
