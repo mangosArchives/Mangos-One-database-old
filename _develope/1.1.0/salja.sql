@@ -1790,9 +1790,9 @@ DELETE FROM `game_graveyard_zone` WHERE id=998 AND ghost_zone=3698;
 INSERT INTO `game_graveyard_zone` VALUES (998,3698,67);
 
 UPDATE `quest_template` SET CompleteScript=11401 WHERE entry=11401;
-UPDATE `quest_template` SET CompleteScript=11401 WHERE entry=11404;
-UPDATE `quest_template` SET CompleteScript=11401 WHERE entry=11405;
-UPDATE `quest_template` SET CompleteScript=11401 WHERE entry=11392;
+UPDATE `quest_template` SET CompleteScript=11404 WHERE entry=11404;
+UPDATE `quest_template` SET CompleteScript=11405 WHERE entry=11405;
+UPDATE `quest_template` SET CompleteScript=11392 WHERE entry=11392;
 
 DELETE FROM `quest_end_scripts` WHERE id IN (11401,11404,11405,11392);
 INSERT INTO `quest_end_scripts` VALUES
