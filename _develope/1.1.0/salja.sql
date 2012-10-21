@@ -1786,6 +1786,9 @@ DELETE FROM creature WHERE guid = 71923;
 -- Thanks LordPsyan
 UPDATE quest_template SET OfferRewardText = 'Hmmm, Narm sent you to me, did he?$B$BWell then, Narm could always be trusted, so that must mean you''re ready to take part of the next sapta--the sapta of fire.$B$BI see it in your eyes already, the burning, the desire. You''ve tasted power, and now you''re ready for more of it. Patience, $N. Remember what earth taught you. Power and destruction will come easily, but you must still know when to stay your hand.' WHERE entry =2984;
 
+DELETE FROM `game_graveyard_zone` WHERE id=998 AND ghost_zone=3698;
+INSERT INTO `game_graveyard_zone` VALUES (998,3698,67);
+
 --
 -- End Some misc stuff
 --
