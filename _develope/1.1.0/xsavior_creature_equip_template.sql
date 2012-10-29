@@ -7219,54 +7219,54 @@ DELETE FROM creature_equip_template_raw WHERE entry=947;
 
 -- ENTRY 950 (0x01FF0F02 / 0x030D)
 DELETE FROM creature_equip_template WHERE entry=950;
-INSERT INTO creature_equip_template VALUES (5566,10616,10616,0);
-UPDATE creature_template SET equipment_id=5566 WHERE equipment_id=950; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5566 WHERE equipment_id=950; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5566);
+INSERT INTO creature_equip_template VALUES (5567,10616,10616,0);
+UPDATE creature_template SET equipment_id=5567 WHERE equipment_id=950; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5567 WHERE equipment_id=950; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5567);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10616,19555,-1,15,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=950;
 
 -- ENTRY 951 (UNUSED OR DUPLICATE ENTRY - REMOVING)
 DELETE FROM creature_equip_template WHERE entry=951;
-UPDATE creature_template SET equipment_id=5566 WHERE equipment_id=951; 
-UPDATE creature SET equipment_id=5566 WHERE equipment_id=951; 
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5566);
+UPDATE creature_template SET equipment_id=5567 WHERE equipment_id=951; 
+UPDATE creature SET equipment_id=5567 WHERE equipment_id=951; 
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5567);
 DELETE FROM creature_equip_template_raw WHERE entry=951;
 
 -- ENTRY 952 (BAD TBC-DB HEX DATA - CORRECTED WITH EXPECTED DATA)
 DELETE FROM creature_equip_template WHERE entry=952;
-INSERT INTO creature_equip_template VALUES (5567,10616,12861,0);
-UPDATE creature_template SET equipment_id=5567 WHERE equipment_id=952; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5567 WHERE equipment_id=952; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5567);
+INSERT INTO creature_equip_template VALUES (5568,10616,12861,0);
+UPDATE creature_template SET equipment_id=5568 WHERE equipment_id=952; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5568 WHERE equipment_id=952; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5568);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10616,19555,-1,15,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (12861,23175,-1,0,4,0,23);
 DELETE FROM creature_equip_template_raw WHERE entry=952;
 
 -- ENTRY 953 (0x01FF0F02 / 0x030D) and (0x01FF0F02 / 0x030D)
 DELETE FROM creature_equip_template WHERE entry=953;
-INSERT INTO creature_equip_template VALUES (5568,10616,22215,0);
-UPDATE creature_template SET equipment_id=5568 WHERE equipment_id=953; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5568 WHERE equipment_id=953; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5568);
+INSERT INTO creature_equip_template VALUES (5569,10616,22215,0);
+UPDATE creature_template SET equipment_id=5569 WHERE equipment_id=953; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5569 WHERE equipment_id=953; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5569);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10616,19555,-1,15,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (22215,34560,-1,15,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=953;
 
 -- ENTRY 954 (0x01FF0F02 / 0x030D)
 DELETE FROM creature_equip_template WHERE entry=954;
-INSERT INTO creature_equip_template VALUES (5569,10617,0,0);
-UPDATE creature_template SET equipment_id=5569 WHERE equipment_id=954; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5569 WHERE equipment_id=954; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5569);
+INSERT INTO creature_equip_template VALUES (5570,10617,0,0);
+UPDATE creature_template SET equipment_id=5570 WHERE equipment_id=954; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5570 WHERE equipment_id=954; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5570);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10617,19556,-1,15,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=954;
 
 -- ENTRY 955 (UNUSED OR DUPLICATE ENTRY - REMOVING)
 DELETE FROM creature_equip_template WHERE entry=955;
-UPDATE creature_template SET equipment_id=5569 WHERE equipment_id=955; 
-UPDATE creature SET equipment_id=5569 WHERE equipment_id=955; 
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5569);
+UPDATE creature_template SET equipment_id=5570 WHERE equipment_id=955; 
+UPDATE creature SET equipment_id=5570 WHERE equipment_id=955; 
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5570);
 DELETE FROM creature_equip_template_raw WHERE entry=955;
 
 -- ENTRY 956 (Entry Does Not Exist)
@@ -7274,19 +7274,19 @@ DELETE FROM creature_equip_template_raw WHERE entry=955;
 
 -- ENTRY 958 (0x01FF0F02 / 0x030D) and (0x01FF0F02 / 0x030D)
 DELETE FROM creature_equip_template WHERE entry=958;
-INSERT INTO creature_equip_template VALUES (5570,10617,10617,0);
-UPDATE creature_template SET equipment_id=5570 WHERE equipment_id=958; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5570 WHERE equipment_id=958; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5570);
+INSERT INTO creature_equip_template VALUES (5571,10617,10617,0);
+UPDATE creature_template SET equipment_id=5571 WHERE equipment_id=958; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5571 WHERE equipment_id=958; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5571);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10617,19556,-1,15,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=958;
 
 -- ENTRY 959 (0x01FF0F02 / 0x030D) and (0x01FF0F02 / 0x030D) and (0x01FF1002 / 0x000F)
 DELETE FROM creature_equip_template WHERE entry=959;
-INSERT INTO creature_equip_template VALUES (5571,10617,10617,5870);
-UPDATE creature_template SET equipment_id=5571 WHERE equipment_id=959; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5571 WHERE equipment_id=959; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5571);
+INSERT INTO creature_equip_template VALUES (5572,10617,10617,5870);
+UPDATE creature_template SET equipment_id=5572 WHERE equipment_id=959; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5572 WHERE equipment_id=959; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5572);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10617,19556,-1,15,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (5870,22671,-1,16,2,0,25);
 DELETE FROM creature_equip_template_raw WHERE entry=959;
@@ -7295,35 +7295,35 @@ DELETE FROM creature_equip_template_raw WHERE entry=959;
 
 -- ENTRY 961 (0x01FF0F02 / 0x030D) and (0x02FF0004 / 0x0017)
 DELETE FROM creature_equip_template WHERE entry=961;
-INSERT INTO creature_equip_template VALUES (5572,10617,13406,0);
-UPDATE creature_template SET equipment_id=5572 WHERE equipment_id=961; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5572 WHERE equipment_id=961; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5572);
+INSERT INTO creature_equip_template VALUES (5573,10617,13406,0);
+UPDATE creature_template SET equipment_id=5573 WHERE equipment_id=961; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5573 WHERE equipment_id=961; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5573);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10617,19556,-1,15,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (13406,24116,-1,0,4,0,23);
 DELETE FROM creature_equip_template_raw WHERE entry=961;
 
 -- ENTRY 962 (0x01FF0F02 / 0x030D) - BAD TBC-DB HEX DATA - CORRECTED TO WHAT IS EXPECTED
 DELETE FROM creature_equip_template WHERE entry=962;
-INSERT INTO creature_equip_template VALUES (5573,10619,0,0);
-UPDATE creature_template SET equipment_id=5573 WHERE equipment_id=962; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5573 WHERE equipment_id=962; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5573);
+INSERT INTO creature_equip_template VALUES (5574,10619,0,0);
+UPDATE creature_template SET equipment_id=5574 WHERE equipment_id=962; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5574 WHERE equipment_id=962; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5574);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10619,19557,-1,15,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=962;
 
 -- ENTRY 963 (UNUSED OR DUPLICATE ENTRY - REMOVING)
 DELETE FROM creature_equip_template WHERE entry=963;
-UPDATE creature_template SET equipment_id=5573 WHERE equipment_id=963; 
-UPDATE creature SET equipment_id=5573 WHERE equipment_id=963; 
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5573);
+UPDATE creature_template SET equipment_id=5574 WHERE equipment_id=963; 
+UPDATE creature SET equipment_id=5574 WHERE equipment_id=963; 
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5574);
 DELETE FROM creature_equip_template_raw WHERE entry=963;
 
 -- ENTRY 964 (UNUSED OR DUPLICATE ENTRY - REMOVING)
 DELETE FROM creature_equip_template WHERE entry=964;
-UPDATE creature_template SET equipment_id=5573 WHERE equipment_id=964; 
-UPDATE creature SET equipment_id=5573 WHERE equipment_id=964; 
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5573);
+UPDATE creature_template SET equipment_id=5574 WHERE equipment_id=964; 
+UPDATE creature SET equipment_id=5574 WHERE equipment_id=964; 
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5574);
 DELETE FROM creature_equip_template_raw WHERE entry=964;
 
 -- ENTRY 965 (Entry Does Not Exist)
@@ -7343,19 +7343,19 @@ DELETE FROM creature_equip_template_raw WHERE entry=966;
 
 -- ENTRY 972 (BAD TBC-DB HEX DATA - CORRECTING TO EXPECTED DATA)
 DELETE FROM creature_equip_template WHERE entry=972;
-INSERT INTO creature_equip_template VALUES (5574,2048,0,0);
-UPDATE creature_template SET equipment_id=5574 WHERE equipment_id=972; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5574 WHERE equipment_id=972; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5574);
+INSERT INTO creature_equip_template VALUES (5575,2048,0,0);
+UPDATE creature_template SET equipment_id=5575 WHERE equipment_id=972; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5575 WHERE equipment_id=972; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5575);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (2048,19770,-1,4,2,3,21);
 DELETE FROM creature_equip_template_raw WHERE entry=972;
 
 -- ENTRY 973 (0x01FF0602 / 0x0211)
 DELETE FROM creature_equip_template WHERE entry=973;
-INSERT INTO creature_equip_template VALUES (5575,13631,0,0);
-UPDATE creature_template SET equipment_id=5575 WHERE equipment_id=973; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5575 WHERE equipment_id=973; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5575);
+INSERT INTO creature_equip_template VALUES (5576,13631,0,0);
+UPDATE creature_template SET equipment_id=5576 WHERE equipment_id=973; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5576 WHERE equipment_id=973; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5576);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (13631,19804,-1,6,2,2,17);
 DELETE FROM creature_equip_template_raw WHERE entry=973;
 
@@ -7363,20 +7363,20 @@ DELETE FROM creature_equip_template_raw WHERE entry=973;
 
 -- ENTRY 975 (0x01FF0602 / 0x0211) and (0x01FF1002 / 0x0019)
 DELETE FROM creature_equip_template WHERE entry=975;
-INSERT INTO creature_equip_template VALUES (5576,13631,0,5870);
-UPDATE creature_template SET equipment_id=5576 WHERE equipment_id=975; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5576 WHERE equipment_id=975; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5576);
+INSERT INTO creature_equip_template VALUES (5577,13631,0,5870);
+UPDATE creature_template SET equipment_id=5577 WHERE equipment_id=975; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5577 WHERE equipment_id=975; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5577);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (13631,19804,-1,6,2,2,17);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (5870,22671,-1,16,2,0,25);
 DELETE FROM creature_equip_template_raw WHERE entry=975;
 
 -- ENTRY 976 (BAD TBC-DB HEX DATA - CORRECTED TO EXPECTED DATA)
 DELETE FROM creature_equip_template WHERE entry=976;
-INSERT INTO creature_equip_template VALUES (5577,10825,0,0);
-UPDATE creature_template SET equipment_id=5577 WHERE equipment_id=976; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5577 WHERE equipment_id=976; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5577);
+INSERT INTO creature_equip_template VALUES (5578,10825,0,0);
+UPDATE creature_template SET equipment_id=5578 WHERE equipment_id=976; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5578 WHERE equipment_id=976; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5578);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10825,19835,-1,7,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=976;
 
@@ -7393,30 +7393,30 @@ DELETE FROM creature_equip_template_raw WHERE entry=979;
 
 -- ENTRY 981 (BAD TBC-DB HEX DATA - CORRECTED TO EXPECTED DATA)
 DELETE FROM creature_equip_template WHERE entry=981;
-INSERT INTO creature_equip_template VALUES (5578,10878,12332,0);
-UPDATE creature_template SET equipment_id=5578 WHERE equipment_id=981; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5578 WHERE equipment_id=981; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5578);
+INSERT INTO creature_equip_template VALUES (5579,10878,12332,0);
+UPDATE creature_template SET equipment_id=5579 WHERE equipment_id=981; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5579 WHERE equipment_id=981; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5579);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10878,20036,-1,7,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (12332,22403,-1,15,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=981;
 
 -- ENTRY 982 (BAD TBC-DB HEX DATA - CORRECTED TO EXPECTED DATA)
 DELETE FROM creature_equip_template WHERE entry=982;
-INSERT INTO creature_equip_template VALUES (5579,10823,1168,0);
-UPDATE creature_template SET equipment_id=5579 WHERE equipment_id=982; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5579 WHERE equipment_id=982; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5579);
+INSERT INTO creature_equip_template VALUES (5580,10823,1168,0);
+UPDATE creature_template SET equipment_id=5580 WHERE equipment_id=982; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5580 WHERE equipment_id=982; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5580);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10823,20086,-1,7,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (1168,30993,-1,6,4,4,14);
 DELETE FROM creature_equip_template_raw WHERE entry=982;
 
 -- ENTRY 983 (0x01FF0702 / 0x030D)
 DELETE FROM creature_equip_template WHERE entry=983;
-INSERT INTO creature_equip_template VALUES (5580,10898,0,0);
-UPDATE creature_template SET equipment_id=5580 WHERE equipment_id=983; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5580 WHERE equipment_id=983; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5580);
+INSERT INTO creature_equip_template VALUES (5581,10898,0,0);
+UPDATE creature_template SET equipment_id=5581 WHERE equipment_id=983; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5581 WHERE equipment_id=983; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5581);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (10898,20095,-1,7,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=983;
 
@@ -7424,10 +7424,10 @@ DELETE FROM creature_equip_template_raw WHERE entry=983;
 
 -- ENTRY 985 (BAD TBC-DB HEX DATA - CORRECTED TO EXPECTED DATA)
 DELETE FROM creature_equip_template WHERE entry=985;
-INSERT INTO creature_equip_template VALUES (5581,1982,0,0);
-UPDATE creature_template SET equipment_id=5581 WHERE equipment_id=985; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5581 WHERE equipment_id=985; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5581);
+INSERT INTO creature_equip_template VALUES (5582,1982,0,0);
+UPDATE creature_template SET equipment_id=5582 WHERE equipment_id=985; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5582 WHERE equipment_id=985; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5582);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (1982,20191,-1,8,2,1,17);
 DELETE FROM creature_equip_template_raw WHERE entry=985;
 
@@ -7439,10 +7439,10 @@ DELETE FROM creature_equip_template_raw WHERE entry=986;
 
 -- ENTRY 987 (0x02FF0A02 / 0x0211)
 DELETE FROM creature_equip_template WHERE entry=987;
-INSERT INTO creature_equip_template VALUES (5582,5613,0,0);
-UPDATE creature_template SET equipment_id=5582 WHERE equipment_id=987; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5582 WHERE equipment_id=987; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5582);
+INSERT INTO creature_equip_template VALUES (5583,5613,0,0);
+UPDATE creature_template SET equipment_id=5583 WHERE equipment_id=987; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5583 WHERE equipment_id=987; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5583);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (5613,20384,-1,10,2,2,17);
 DELETE FROM creature_equip_template_raw WHERE entry=987;
 
@@ -7452,40 +7452,40 @@ DELETE FROM creature_equip_template_raw WHERE entry=987;
 
 -- ENTRY 991 (0x01FF0702 / 0x030D) and (0x01FF0F02 / 0x030D)
 DELETE FROM creature_equip_template WHERE entry=991;
-INSERT INTO creature_equip_template VALUES (5583,11019,5282,0);
-UPDATE creature_template SET equipment_id=5583 WHERE equipment_id=991; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5583 WHERE equipment_id=991; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5583);
+INSERT INTO creature_equip_template VALUES (5584,11019,5282,0);
+UPDATE creature_template SET equipment_id=5584 WHERE equipment_id=991; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5584 WHERE equipment_id=991; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5584);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (11019,20502,-1,7,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (5282,6447,-1,15,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=991;
 
 -- ENTRY 992 (0x01FF0702 / 0x030D) and (0x01FF0604 / 0x040E)
 DELETE FROM creature_equip_template WHERE entry=992;
-INSERT INTO creature_equip_template VALUES (5584,11019,12452,0);
-UPDATE creature_template SET equipment_id=5584 WHERE equipment_id=992; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5584 WHERE equipment_id=992; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5584);
+INSERT INTO creature_equip_template VALUES (5585,11019,12452,0);
+UPDATE creature_template SET equipment_id=5585 WHERE equipment_id=992; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5585 WHERE equipment_id=992; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5585);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (11019,20502,-1,7,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (12452,22635,-1,6,4,4,14);
 DELETE FROM creature_equip_template_raw WHERE entry=992;
 
 -- ENTRY 993 (0x01FF0702 / 0x030D) and (0x01FF0604 / 0x040E)
 DELETE FROM creature_equip_template WHERE entry=993;
-INSERT INTO creature_equip_template VALUES (5585,11019,12893,0);
-UPDATE creature_template SET equipment_id=5585 WHERE equipment_id=993; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5585 WHERE equipment_id=993; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5585);
+INSERT INTO creature_equip_template VALUES (5586,11019,12893,0);
+UPDATE creature_template SET equipment_id=5586 WHERE equipment_id=993; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5586 WHERE equipment_id=993; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5586);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (11019,20502,-1,7,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (12893,23387,-1,6,4,4,14);
 DELETE FROM creature_equip_template_raw WHERE entry=993;
 
 -- ENTRY 994 (0x01FF0702 / 0x030D) and (0x01FF0702 / 0x030D)
 DELETE FROM creature_equip_template WHERE entry=994;
-INSERT INTO creature_equip_template VALUES (5586,11019,13718,0);
-UPDATE creature_template SET equipment_id=5586 WHERE equipment_id=994; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5586 WHERE equipment_id=994; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5586);
+INSERT INTO creature_equip_template VALUES (5587,11019,13718,0);
+UPDATE creature_template SET equipment_id=5587 WHERE equipment_id=994; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5587 WHERE equipment_id=994; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5587);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (11019,20502,-1,7,2,3,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (13718,24478,-1,7,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=994;
@@ -7503,19 +7503,19 @@ DELETE FROM creature_equip_template_raw WHERE entry=996;
 
 -- ENTRY 999 (0x01FF0702 / 0x030D)
 DELETE FROM creature_equip_template WHERE entry=999;
-INSERT INTO creature_equip_template VALUES (5587,11025,11025,0);
-UPDATE creature_template SET equipment_id=5587 WHERE equipment_id=999; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5587 WHERE equipment_id=999; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5587);
+INSERT INTO creature_equip_template VALUES (5588,11025,11025,0);
+UPDATE creature_template SET equipment_id=5588 WHERE equipment_id=999; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5588 WHERE equipment_id=999; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5588);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (11025,20507,-1,7,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=999;
 
 -- ENTRY 1000 (BAD TBC-DB HEX DATA - CORRECTED TO EXPECTED DATA)
 DELETE FROM creature_equip_template WHERE entry=1000;
-INSERT INTO creature_equip_template VALUES (5588,11042,0,0);
-UPDATE creature_template SET equipment_id=5588 WHERE equipment_id=1000; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=5588 WHERE equipment_id=1000; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
-UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5588);
+INSERT INTO creature_equip_template VALUES (5589,11042,0,0);
+UPDATE creature_template SET equipment_id=5589 WHERE equipment_id=1000; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=5589 WHERE equipment_id=1000; -- RENUMBER ID'S FOR GAPLESS TRANSITION (ONCE ALL ID'S ARE CONVERTED WILL RENUMBER AGAIN)
+UPDATE creature SET equipment_id=0 WHERE id IN (SELECT entry FROM creature_template WHERE equipment_id=5589);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (11042,20538,-1,7,2,3,13);
 DELETE FROM creature_equip_template_raw WHERE entry=1000;
 
